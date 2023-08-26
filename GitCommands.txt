@@ -7,6 +7,10 @@ git config --global user.email "your@email.com"
 Adding to staging area. Before we can commit our code, we need to place it inside the staging area.
 git add file.etc file2.etc | to add a file or multiple files
 git add . | to add all files.
+git reset <file-name> | to unstage.
+git reset | to unstage.
+git reset <commit-hash> | to uncommit changes and change it to be the latest checkpoint.
+git reset --hard <commit-hash> | to uncommit to specific commit and make it HEAD meaning get progress till that checkpoint.
 
 To create a new commit, you will need to repeat the process of adding files to the staging area and then committing them after. Again, it's very useful to use the git status command to see which files were modified, staged, or untracked.
 git comit -m "message" | to commit changes.
@@ -24,3 +28,24 @@ to go to a branch use the git checkout <branch-name> command.
 
 git merge <branch-name> | to merge a branch to master branch.
 git branch -d <branch-name> | to delete a branch.
+
+git pull | loads changes from cloud repository(github).
+git fetch | informs user of the changes done to files on github.
+git merge | updates the file as in pull.
+
+git clone <repository-link> | to clone a repository to local.
+--------------------------------------------------------------------------------------
+
+to create a new repository and move it to github.
+git init
+git comit -m "message"
+git branch -M main
+git remote add origin <link-to-github-repository>
+git push -u origin main
+
+to push files to existing repository.
+git remote add origin <link-to-github-repository> | to push to an existing repository.
+git branch -M main
+git push -u origin main
+
+--------------------------------------------------------------------------------------
