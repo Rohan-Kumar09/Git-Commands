@@ -36,6 +36,8 @@ git merge | updates the file as in pull.
 
 git push -f origin master | to force push into github repository.
 git clone <repository-link> | to clone a repository to local.
+git stash save "message"
+git stash clear
 --------------------------------------------------------------------------------------
 
 to create a new repository and move it to github.
